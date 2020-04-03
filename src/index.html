@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Node MongoDB CRUD</title>
+    <link rel="stylesheet" href="ui/bootstrap.min.css">
+    <link rel="stylesheet" href="ui/main.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center text-light mt-4">Electron & Mongodb CRUD</h1>
+        <div class="row mt-1">
+            <div class="card col-md-6 offset-md-3">
+                <div class="card-title text-center">
+                    <h4 class="pt-4"><strong>TASK FORM</strong></h4>
+                </div>
+                <hr>
+                <div class="card-body">
+                    <form id="taskForm">
+                        <div class="form-group">
+                            <input type="text" id="taskName" class="form-control" placeholder="Task's name..." autofocus>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="taskDescription" class="form-control" rows="3" placeholder="Task's description..."></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary btn-block">
+                                Save
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="taskList"></div>
+    </div>
+
+
+
+    <ul id="taskList"></ul>
+
+    <script src="ui/app.js"></script>
+</body>
+</html>
